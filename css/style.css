@@ -78,6 +78,11 @@ header nav a:hover
     border : none; 
 }
 
+#search-bar:focus
+{
+    box-shadow: 2px 2px lightblue;
+}
+
 .search-icon
 {
     font-size : 20px;
