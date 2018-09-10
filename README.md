@@ -1,2 +1,2 @@
 # SalsaCreations
-Projet de clonage de alsacreations.com
+Projet alsacreations.com
