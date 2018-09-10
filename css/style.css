@@ -1,0 +1,61 @@
+/* Mettre du style */
+html
+{
+    height : 100%;
+}
+
+body
+{
+    height : 100%;
+    background-color : #F3F3F3;
+}
+
+header
+{
+    background-color : white;
+}
+
+#topbar
+{
+    height : 73px;
+    align-items : center; 
+}
+
+#logo
+{
+    width : 157px;
+    height : 36px;
+}
+
+header nav
+{
+    font-size : 1.2em;
+    height : 73px;
+}
+
+header nav a
+{
+    text-decoration: none;
+    color : black;
+    padding-right : 20px;
+    
+}
+
+header nav a:hover
+{
+    text-decoration: underline;
+    color : #00B5E0;
+}
+
+#incription, #connexion
+{
+    border-radius : 8px; 
+    background-color : #ABC738;
+    border : 1px solid #ABC738;
+}
+
+#inscription
+{
+    color : #ABC738;
+    border : 1px solid green; 
+}
