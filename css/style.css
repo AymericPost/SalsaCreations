@@ -31,6 +31,7 @@ header nav
 {
     font-size : 1.2em;
     height : 73px;
+    padding-top : 25px; 
 }
 
 header nav a
@@ -58,4 +59,41 @@ header nav a:hover
 {
     color : #ABC738;
     border : 1px solid green; 
+}
+
+#search-box
+{
+    margin-top : 20px;
+    justify-content : center;
+}
+
+.input-box
+{
+    background-color : white;
+}
+
+#search-bar
+{
+    outline : none;
+    border : none; 
+}
+
+.search-icon
+{
+    font-size : 20px;
+    align-self : center; 
+}
+
+#search-ok
+{
+    margin-left : 10px;
+    background-color : white;
+    border : none;
+    color : black;
+}
+
+#search-ok:hover
+{
+    background-color : #ABC738;
+    color : white;
 }
