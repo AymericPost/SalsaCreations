@@ -132,8 +132,40 @@ header nav a:hover
 
 /******** Bas de page du main ******/
 
+#main-footer
+{
+    align-items : center;
+}
+
+#citation
+{
+    justify-content : center;
+    font-size : 18px;
+}
+
+#citation .fa
+{
+    font-size : 10px;
+}
+
+#citation-auteur
+{
+    font-size : 14px;
+    color : #ABC738;
+}
+
+#contacts
+{
+    /*justify-content : space-around;*/ 
+}
+
+#contacts-logo
+{
+    justify-content : space-around;
+}
 
 /******** Footer *********/
+
 footer
 {
     background-color : white;
