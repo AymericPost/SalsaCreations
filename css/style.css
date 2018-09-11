@@ -1,4 +1,4 @@
-/* Mettre du style */
+/******** Header ******/
 html
 {
     height : 100%;
@@ -61,6 +61,9 @@ header nav a:hover
     border : 1px solid green; 
 }
 
+
+/******* Barre de recherche *******/
+
 #search-box
 {
     margin-top : 20px;
@@ -101,4 +104,48 @@ header nav a:hover
 {
     background-color : #ABC738;
     color : white;
+}
+
+/******** Pagination ******/
+
+#pagination
+{
+    justify-content : center;
+}
+
+#pagination input
+{
+    outline : none;
+    border : none;
+    background-color : white;
+    border-radius : 50%;
+    font-size : 1.5em;
+    width : 40px;
+    margin-right : 10px;
+}
+
+#pagination input:hover
+{
+    background-color : #ABC738;
+    color : white;
+}
+
+/******** Bas de page du main ******/
+
+
+/******** Footer *********/
+footer
+{
+    background-color : white;
+}
+
+footer a
+{
+    color : black;
+    text-decoration : underline; 
+}
+
+footer a:hover
+{
+    color : black;
 }
