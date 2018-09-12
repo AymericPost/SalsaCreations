@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>AlsaCréation : web, tutoriels</title>
+        <title>SalsaCréation : web, tutoriels</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -40,32 +40,216 @@
         
         <div id="main">
             
-            <div id="search-box">
                 
+                <!-- Contenu dynamique variables en fonction de la page -->
+                <!--
+                    Responsive : 
+                        990px de large = grand écrans -> 3 articles
+                        de 545px à 989px de large = écrans moyens -> 2 articles
+                        de 544 à moins = écrans petits -> 1 article
+                -->
+                
+                <!-- Barre de recherche visible sur la plupart des pages-->
+                
+                <!-- 
+                    Articles de tailles égales quelque soit la disposition
+                        - Une image en-tête
+                        - Un titre
+                        - Une description partielle de l'article
+                        - Le profil (réduit) de son auteur et commentaires
+                -->
+
+                <!-- Tentative de recréer une carte abandonnée
+                <div>
+                    <a href="#">
+                        <img src="https://via.placeholder.com/450x221"/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed lectus ac sapien tempus commodo. Proin pretium magna sagittis nisl dignissim commodo. Sed id ipsum quis nisl pellentesque suscipit nec sit amet felis. Suspendisse sit amet libero scelerisque, accumsan libero sit amet, tincidunt urna. Fusce ac ante semper, fringilla dolor ac, scelerisque ante.</p>
+                        
+                        <div>
+                            <img src="https://via.placeholder.com/25x25"/>
+                            <p>Lorem</p>
+                            <img src="https://via.placeholder.com/25x25"/>
+                        </div>
+                    </a>
+                </div> -->
+            <div class="card-columns ap-mosaic-container">
+
+
+                <div class="card" style="width: 18rem;">
+                    <a href="#">     
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                        </div>
+                    </a>
+                </div>
+        
+                <div class="card" style="width: 18rem;">
+                    <a href="#">     
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+
+                    <a href="#">
+                        <img class="card-img-top" src="https://via.placeholder.com/450x221" alt="Card image cap">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                            <div class="ap-footer-carte-mosaique">
+                                <div class="ap-just-flex">
+                                    <div><img src="https://via.placeholder.com/25x25" alt="Publisher avatar" class="rounded-circle"></div>
+                                    <p>user_name </p>
+                                </div>
+                            
+                                <i class="far fa-comment"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+
+                    <a href="#">
+                        <img class="card-img-top" src="https://via.placeholder.com/450x221" alt="Card image cap">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                            <div class="ap-footer-carte-mosaique">
+                                <div class="ap-just-flex">
+                                    <div><img src="https://via.placeholder.com/25x25" alt="Publisher avatar" class="rounded-circle"></div>
+                                    <p>user_name </p>
+                                </div>
+                            
+                                <i class="far fa-comment"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="card" style="width: 18rem;">
+
+                    <a href="#">
+                        <img class="card-img-top" src="https://via.placeholder.com/450x221" alt="Card image cap">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                            <div class="ap-footer-carte-mosaique">
+                                <div class="ap-just-flex">
+                                    <div><img src="https://via.placeholder.com/25x25" alt="Publisher avatar" class="rounded-circle"></div>
+                                    <p>user_name </p>
+                                </div>
+                            
+                                <i class="far fa-comment"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="card" style="width: 18rem;">
+
+                    <a href="#">
+                        <img class="card-img-top" src="https://via.placeholder.com/450x221" alt="Card image cap">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                            <div class="ap-footer-carte-mosaique">
+                                <div class="ap-just-flex">
+                                    <div><img src="https://via.placeholder.com/25x25" alt="Publisher avatar" class="rounded-circle"></div>
+                                    <p>user_name </p>
+                                </div>
+                            
+                                <i class="far fa-comment"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+
+                    <a href="#">
+                        <img class="card-img-top" src="https://via.placeholder.com/450x221" alt="Card image cap">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                            <div class="ap-footer-carte-mosaique">
+                                <div class="ap-just-flex">
+                                    <div><img src="https://via.placeholder.com/25x25" alt="Publisher avatar" class="rounded-circle"></div>
+                                    <p>user_name </p>
+                                </div>
+                            
+                                <i class="far fa-comment"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="card" style="width: 18rem;">
+
+                    <a href="#">
+                        <img class="card-img-top" src="https://via.placeholder.com/450x221" alt="Card image cap">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                            <div class="ap-footer-carte-mosaique">
+                                <div class="ap-just-flex">
+                                    <div><img src="https://via.placeholder.com/25x25" alt="Publisher avatar" class="rounded-circle"></div>
+                                    <p>user_name </p>
+                                </div>
+                            
+                                <i class="far fa-comment"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="card" style="width: 18rem;">
+
+                    <a href="#">
+                        <img class="card-img-top" src="https://via.placeholder.com/450x221" alt="Card image cap">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                            <div class="ap-footer-carte-mosaique">
+                                <div class="ap-just-flex">
+                                    <div><img src="https://via.placeholder.com/25x25" alt="Publisher avatar" class="rounded-circle"></div>
+                                    <p>user_name </p>
+                                </div>
+                            
+                                <i class="far fa-comment"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
             </div>
-            
-            <!-- Contenu dynamique variables en fonction de la page -->
-            <!--
-                Responsive : 
-                    990px de large = grand écrans -> 3 articles
-                    de 545px à 989px de large = écrans moyens -> 2 articles
-                    de 544 à moins = écrans petits -> 1 article
-            -->
-            
-            <!-- Barre de recherche visible sur la plupart des pages-->
-            
-            <!-- 
-                Articles de tailles égales quelque soit la disposition
-                    - Une image en-tête
-                    - Un titre
-                    - Une description partielle de l'article
-                    - Le profil (réduit) de son auteur et commentaires
-            -->
-            
-            <!-- Navigation pages suivantes -->
-            
-            <!-- Aperçu du forum -->
-        </div>
+                <!-- Navigation pages suivantes -->
+                
+                <!-- Aperçu du forum -->
+
         
         <footer>
             <!-- Citation -->
@@ -73,5 +257,10 @@
             <!-- Bouton haut de page -->
             <!-- Mentions légales -->
         </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
     </body>
 </html>

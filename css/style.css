@@ -59,3 +59,24 @@ header nav a:hover
     color : #ABC738;
     border : 1px solid green; 
 }
+
+.ap-mosaic-container {
+    margin: 0%;
+    padding: 0%;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.ap-footer-carte-mosaique {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ap-just-flex {
+    display: flex;
+}
+
+.ap-just-flex > p {
+    margin-left: 5%;
+}
