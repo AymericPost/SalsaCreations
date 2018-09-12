@@ -23,7 +23,7 @@ header
 
 #logo
 {
-    width : 157px;
+    </sup>    width : 157px;
     height : 36px;
 }
 
@@ -106,6 +106,12 @@ header nav a:hover
     color : white;
 }
 
+/******* Main *******/
+#main
+{
+    background-color : #F3F3F3;
+}
+
 /******** Pagination ******/
 
 #pagination
@@ -135,6 +141,7 @@ header nav a:hover
 #main-footer
 {
     align-items : center;
+    color : #008CBA;
 }
 
 #citation
@@ -156,7 +163,7 @@ header nav a:hover
 
 #contacts
 {
-    /*justify-content : space-around;*/ 
+    font-size : 1.4em;
 }
 
 #contacts-logo
@@ -168,7 +175,12 @@ header nav a:hover
 
 footer
 {
+    /*height : auto;*/
+    width : 100%;
     background-color : white;
+    padding-top : 10px;
+    margin-bottom : 0px;
+    /*padding-bottom : 5px;*/
 }
 
 footer a
