@@ -1,51 +1,38 @@
-/******** Header ******/
-html
-{
-    height : 100%;
-}
+/* 
+
+@include media-breakpoint-up(md) {
+    nav form
+    {
+        justify-content: center;
+        align-items : center;
+    }
+} */
 
 body
 {
-    height : 100%;
     background-color : #F3F3F3;
 }
 
-header
-{
-    background-color : white;
-}
-
-#topbar
-{
-    height : 73px;
-    align-items : center; 
-}
-
-#logo
-{
-    width : 157px;
-    height : 36px;
-}
+/********* Header *************/
 
 header nav
 {
     font-size : 1.2em;
-    height : 73px;
-    padding-top : 25px; 
+    /*height : 73px;
+    padding-top : 25px;*/
 }
 
-header nav a
+header .nav-link
 {
     text-decoration: none;
     color : black;
     padding-right : 20px;
-    
 }
 
-header nav a:hover
+header .nav-link:hover
 {
     text-decoration: underline;
-    color : #00B5E0;
+    color : #00B5E0 !important;
 }
 
 #incription, #connexion
@@ -60,7 +47,6 @@ header nav a:hover
     color : #ABC738;
     border : 1px solid green; 
 }
-
 
 /******* Barre de recherche *******/
 
@@ -106,81 +92,55 @@ header nav a:hover
     color : white;
 }
 
-/******* Main *******/
-#main
-{
-    background-color : #F3F3F3;
-}
+/********* Pagination ********/
 
-/******** Pagination ******/
-
-#pagination
+#main .page-link
 {
-    justify-content : center;
-}
-
-#pagination input
-{
-    outline : none;
-    border : none;
-    background-color : white;
-    border-radius : 50%;
-    font-size : 1.5em;
-    width : 40px;
+    border-radius : 100%; 
     margin-right : 10px;
+    font-size : 1.3rem;
+    color : black;
 }
 
-#pagination input:hover
+#main .page-link:hover
 {
     background-color : #ABC738;
     color : white;
 }
 
-/******** Bas de page du main ******/
-
-#main-footer
-{
-    align-items : center;
-    color : #008CBA;
-}
+/******** Citation *******/
 
 #citation
 {
-    justify-content : center;
-    font-size : 18px;
+    font-size : 1.3rem;
 }
 
 #citation .fa
 {
-    font-size : 10px;
+    font-size : 0.5rem;
 }
 
 #citation-auteur
 {
-    font-size : 14px;
+    font-size : 0.8rem;
     color : #ABC738;
 }
 
-#contacts
-{
-    font-size : 1.4em;
-}
+/******** Bas de page du main ******/
 
-#contacts-logo
+#contacts, #contacts a
 {
-    justify-content : space-around;
+    color : #008CBA;
+    font-size : 1.4rem;
 }
 
 /******** Footer *********/
 
 footer
 {
-    /*height : auto;*/
-    width : 100%;
     background-color : white;
-    padding-top : 10px;
-    margin-bottom : 0px;
-    /*padding-bottom : 5px;*/
+    padding-top : 0.5%;
+    padding-bottom : 0.2%; 
 }
 
 footer a

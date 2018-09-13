@@ -10,142 +10,128 @@
     </head>
     
     <body>
-        <div class="container">
+        <div id="main" class="container">
             <header>
                 <!-- Logo + liens de navigations + compte -->
-                <div id="topbar" class="row">
-                    
-                    <div id="logo-container" class="col-2">
-                        <a href="#">
-                            <img src="https://cdn.alsacreations.net/css/img/logo-alsacreations.svg" alt="Logo AlsaCréations" id="logo" />
-                        </a>
-                    </div>
+                <nav class="navbar navbar-expand-md navbar-light bg-light">
+                    <a href="#" class="navbar-brand">
+                        <img src="https://cdn.alsacreations.net/css/img/logo-alsacreations.svg" width="157" heigth="36" alt="Logo AlsaCréations" id="logo" />
+                    </a>
 
-                    <nav class="col-7">
-                        <a href="#"><span class="fa fa-home" aria-hidden="true"></span>Actualités</a>
-                        <a href="#"><span class="fa fa-angle-left" aria-hidden="true"></span><span class="fa fa-angle-right" aria-hidden="true"></span>Tutoriels</a>
-                        <a href="#"><span class="far fa-comments" aria-hidden="true"></span>Forum</a>
-                        <a href="#"><span class="far fa-id-card" aria-hidden="true"></span>Emploi</a>
-                    </nav>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                    <div id="connexion-button-group" class="col-3">
-                        <button id="inscription" class="btn btn-light">S'incrire</button>
-                        <button id="connexion" class="btn btn-success">Connexion</button>
+                    <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a href="#" class="nav-link"><span class="fa fa-home" aria-hidden="true"></span>Actualités</a>
+                            </li>
+
+                            <li class="nav-item active">
+                                <a href="#" class="nav-link"><span class="fa fa-angle-left" aria-hidden="true"></span><span class="fa fa-angle-right" aria-hidden="true"></span>Tutoriels</a>
+                            </li>
+
+                            <li class="nav-item active">
+                                <a href="#" class="nav-link"><span class="far fa-comments" aria-hidden="true"></span>Forum</a>
+                            </li>
+                        
+                            <li class="nav-item active">
+                                <a href="#" class="nav-link"><span class="far fa-id-card" aria-hidden="true"></span>Emploi</a>
+                            </li>
+                        </ul>
+
+                        <form class="form-inline">
+                            <button id="inscription" class="btn btn-light">S'incrire</button>
+                            <button id="connexion" class="btn btn-success">Connexion</button>
+                        </form>
                     </div>
-                </div>
+                </nav>
             </header>
-            
-            <div id="main" class="container">
-                
-                <div id="search-box" class="row">
+
+            <!-- Barre de recherche -->
+            <div id="search-box" class="row">
                     <div class="input-box">
                         <span class="search-icon fa fa-search" aria-hidden="true"></span>
                         <input id="search-bar" type="text" placeholder="Tutoriel, propriété css..." />
                     </div>
                     <input id="search-ok" type="submit" value="Ok" /> 
                 </div>
-                
-                <!-- Contenu dynamique variables en fonction de la page -->
-                <!--
-                    Responsive : 
-                        990px de large = grand écrans -> 3 articles
-                        de 545px à 989px de large = écrans moyens -> 2 articles
-                        de 544 à moins = écrans petits -> 1 article
-                -->
-                
-                <!-- Barre de recherche visible sur la plupart des pages-->
-                
-                <!-- 
-                    Articles de tailles égales quelque soit la disposition
-                        - Une image en-tête
-                        - Un titre
-                        - Une description partielle de l'article
-                        - Le profil (réduit) de son auteur et commentaires
-                -->
 
-                <p>
+            <!-- Pagination -->
+            <nav>
+                <ul class="pagination justify-content-center">
+                    <li class="page-item"></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item"><a class="page-link" href="#">6</a></li>
+                    <li class="page-item"><a class="page-link" href="#"><span class="fa fa-chevron-right" aria-hidden="true"></span></a></li>
+                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                    <li class="page-item"></li>
+                </ul>
+            </nav>
 
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt pretium orci, vestibulum laoreet felis ornare condimentum. Sed suscipit orci id dapibus facilisis. Maecenas iaculis diam in massa fringilla finibus. Nulla interdum sit amet urna ac accumsan. Curabitur semper urna vitae tellus placerat, in egestas neque ullamcorper. Suspendisse eleifend sit amet libero nec egestas. Morbi in tempor purus, a iaculis lectus. Quisque viverra, turpis consectetur fringilla ornare, tellus ligula sodales sem, eu ullamcorper lectus neque ac nisl. Etiam ultricies ipsum et tortor fermentum pretium. Ut commodo elementum orci, et tempor ex semper non.
-                        
-                        Aenean eget nisi elit. Suspendisse non ex et orci facilisis gravida nec condimentum nibh. Sed rhoncus quam vel ornare volutpat. Aliquam erat volutpat. Donec aliquet nunc ut varius fermentum. Phasellus at eros at enim dictum ullamcorper. Quisque vitae dolor eros. Praesent et ornare lorem. Suspendisse at convallis sapien. Aenean et sollicitudin orci, ut pretium dui. Sed commodo accumsan magna, vitae molestie odio. Quisque ante purus, finibus non blandit quis, malesuada scelerisque dolor. Cras tristique lacus ac libero posuere, sed ullamcorper augue commodo. Donec ut magna ac magna tempor tincidunt.
-                        
-                        Vivamus dictum magna sed eros finibus pretium. In faucibus fermentum venenatis. Sed tempor odio pulvinar, venenatis felis vitae, hendrerit dolor. Suspendisse sodales eget justo quis lacinia. Vivamus non eros enim. Quisque nunc dui, dignissim eu tellus nec, pellentesque efficitur turpis. Praesent auctor iaculis tellus quis venenatis. Sed dignissim lacus sit amet nunc consequat hendrerit. Vestibulum commodo posuere felis in interdum. Mauris sed nunc id neque feugiat aliquam. Proin blandit feugiat lorem quis mattis. Maecenas metus justo, pharetra ac nibh sed, tincidunt ornare odio.
-                        
-                        Donec vel posuere odio, pulvinar sodales eros. Etiam auctor odio at viverra ullamcorper. Curabitur non rutrum ipsum, sit amet congue elit. Aenean at libero convallis, mattis purus sit amet, eleifend lorem. Etiam vitae nisi ac libero convallis vehicula. In tincidunt blandit lobortis. Curabitur varius justo ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec sapien vitae urna faucibus pulvinar. Maecenas feugiat nunc nulla, non pharetra ligula laoreet non. Vestibulum accumsan, enim vitae cursus dictum, justo nisl aliquam dui, ac porttitor ligula tellus ac ligula. Sed mollis id sem eget rutrum.
-                        
-                        Nullam at luctus mauris. Duis vehicula dignissim condimentum. Donec in mollis eros. Mauris tortor nisl, fringilla vitae purus nec, consectetur sodales libero. Suspendisse sed viverra diam. Sed tincidunt ex ac turpis tempor lobortis. Praesent eu erat a ante efficitur pulvinar a eget mi. Vivamus ullamcorper semper laoreet. Duis sagittis id ante ut euismod. Fusce at erat libero. </p>
-                
-                        Nullam at luctus mauris. Duis vehicula dignissim condimentum. Donec in mollis eros. Mauris tortor nisl, fringilla vitae purus nec, consectetur sodales libero. Suspendisse sed viverra diam. Sed tincidunt ex ac turpis tempor lobortis. Praesent eu erat a ante efficitur pulvinar a eget mi. Vivamus ullamcorper semper laoreet. Duis sagittis id ante ut euismod. Fusce at erat libero. </p>
-                
-                <!-- Navigation pages suivantes -->
-                
-                <div id="pagination" class="row">
-                    <input type="button" value="1" />
-                    <input type="button" value="2" />
-                    <input type="button" value="3" />
-                    <input type="button" value="4" />
-                    <input type="button" value="5" />
-                    <input type="button" value="6" />
-                    <input type="button" value="&gt;" />
-                    <input type="button" value="..." />
+            <!-- Citation -->
+            <blockquote id="citation" class="blockquote text-center">
+                <cite>
+                    <sup><span class="fa fa-quote-left" aria-hidden="true"></span></sup>
+                        Citation
+                    <sup><span class="fa fa-quote-right" aria-hidden="true"></span></sup>
+                </cite> 
+                <span id="citation-auteur">Auteur</span>
+            </blockquote>
 
-                <!-- Aperçu du forum -->
-
-                <div id="main-footer" class="container">
-                    <!-- Citation -->
-                    <div id="citation" class="row">
-                        <p>
-                            <sup><span class="fa fa-quote-left" aria-hidden="true"></span></sup>
-                            Il existe 10 types de personnes : ceux qui comprends les booléens et les autres
-                            <!--Il existe 2 type de booléens : vrai ou faux ?-->
-                            <sup><span class="fa fa-quote-right" aria-hidden="true"></span></sup>
-                            <span id="citation-auteur">(Aymeric)</span>
-                        </p>
+            <!-- Liens externes -->
+            <div id="contacts" class="row">
+                <div id="contacts-logo" class="col-4 row">
+                    <div class="col">
+                        <span class="fab fa-github" aria-hidden="true"></span>
                     </div>
-                    <!-- Liens externes -->
-                    <div id="contacts" class="row">
-                        <div id="contacts-logo" class="col-4 row">
-                            <div class="col">
-                                <span class="fab fa-github" aria-hidden="true"></span>
-                            </div>
 
-                            <div class="col">
-                                <span class="fab fa-google-plus" aria-hidden="true"></span>
-                            </div>
-
-                            <div class="col">
-                                <span class="fab fa-facebook-f" aria-hidden="true"></span>
-                            </div>
-
-                            <div class="col">
-                                <span class="fab fa-twitter" aria-hidden="true"></span>
-                            </div>
-
-                            <div class="col">
-                                <span class="fa fa-rss" aria-hidden="true"></span>
-                            </div>
-                        </div>                                 
-                        <p class="col">Plan du site</p>
-                        <p class="col">Contact</p>
-                        <p class="col">Boutique</p>
-                        <p class="col">Formations</p>
-                        <p class="col">agence web</p>
+                    <div class="col">
+                        <span class="fab fa-google-plus" aria-hidden="true"></span>
                     </div>
-                    <!-- Bouton haut de page -->
+
+                    <div class="col">
+                        <span class="fab fa-facebook-f" aria-hidden="true"></span>
+                    </div>
+
+                    <div class="col">
+                        <span class="fab fa-twitter" aria-hidden="true"></span>
+                    </div>
+
+                    <div class="col">
+                        <span class="fa fa-rss" aria-hidden="true"></span>
+                    </div>
                 </div>
+
+                <a href="#" class="col">Plan du site</a>
+                <a href="#" class="col">Contact</a>
+                <a href="#" class="col">Boutique</a>
+                <a href="#" class="col">Formations</a>
+                <a href="#" class="col">agence web</a>
             </div>
-            
+
             <footer>
                 <!-- Mentions légales -->
                 <p>
-                    Salsacréations est une communauté dédiée à la conception de sites et applications web de qualité, grâce aux standards W3C, aux feuilles de styles CSS, aux langages HTML et JavaScript, et à l'accessibilité. 
-                    Réalisé par l'agence web 
-                    <a href="#">Salsacreations.fr</a> 
-                    · Hébergement <a href="#">maison et amical</a> 
-                    · <a href="#">À propos et mentions légales</a>
-                    . <a href="#">Données personnelles</a>
-                </p>
+                        Salsacréations est une communauté dédiée à la conception de sites et applications web de qualité, grâce aux standards W3C, aux feuilles de styles CSS, aux langages HTML et JavaScript, et à l'accessibilité. 
+                        Réalisé par l'agence web 
+                        <a href="#">Salsacreations.fr</a> 
+                        · Hébergement <a href="#">maison et amical</a> 
+                        · <a href="#">À propos et mentions légales</a>
+                        . <a href="#">Données personnelles</a>
+                    </p>
             </footer>
-        </div>
+       </div>
+       
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </body>
 </html>
