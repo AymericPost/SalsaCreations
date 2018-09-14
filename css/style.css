@@ -59,3 +59,108 @@ header nav a:hover
     color : #ABC738;
     border : 1px solid green; 
 }
+
+
+
+
+
+---------/*ASIDE*/--------
+
+
+----------/*titres aside*/-------------
+
+aside h4{
+    
+    font-size: 1.5rem;
+    font-weight: 700; 
+    padding: 2% 0;
+    line-height:1.2 em;
+    color: #454545;
+    font-family: Montserrat,Helvetica,Arial,sans-Serif;
+
+    
+}
+
+
+---------/*titres sujets forum*/----------
+
+
+.forum-topic {
+    width: 100%;
+    color:#008cba;
+    text-decoration:none;
+    margin-top: 0;
+        
+}
+
+
+.forum-topic:hover{
+    text-decoration: underline;
+    
+}
+
+
+
+------/* tags (differentes couleurs)---non actifs pour l'instant à cause de bootstrap
+
+.badge-primary {
+    background-color: #6fa939;
+}
+*/------
+
+
+
+        
+----------/* A RAJOUTER DANS HEADER : font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;  ---------------*/ 
+        
+
+
+
+.container-alsanautes-twitter{
+    margin-top:5%;
+    
+}
+
+
+.alsanautes{
+    background-color: #fff;
+    padding:1.2rem; 
+
+
+}
+
+.twitter{
+    background-color: #fff;
+     padding:1.2rem; 
+
+
+}
+
+
+.badge-container{
+    width:10em;
+   
+}
+
+
+@media only screen and (max-width:480px)
+{}
+
+    
+
+@media only screen and (min-width:481px) and (max-width:989px)
+    
+{}
+
+
+
+ol{
+    /*list-style-image:url("https://png.icons8.com/metro/1600/checkmark.png");
+}
+
+
+
+
+
+
+
