@@ -11,32 +11,42 @@
 
     <body>
         <header>
-            <!-- Logo + liens de navigations + compte -->
+                <!-- Logo + liens de navigations + compte -->
+                <nav class="navbar navbar-expand-md navbar-light bg-light">
+                    <a href="#" class="navbar-brand">
+                        <img src="https://cdn.alsacreations.net/css/img/logo-alsacreations.svg" width="157" heigth="36" alt="Logo AlsaCréations" id="logo" />
+                    </a>
 
-            <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <div id="topbar" class="row">
+                    <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a href="#" class="nav-link"><span class="fa fa-home" aria-hidden="true"></span>Actualités</a>
+                            </li>
 
-                    <div id="logo-container" class="col-2">
-                        <a href="#">
-                            <img src="https://cdn.alsacreations.net/css/img/logo-alsacreations.svg" alt="Logo AlsaCréations" id="logo" />
-                        </a>
+                            <li class="nav-item active">
+                                <a href="#" class="nav-link"><span class="fa fa-angle-left" aria-hidden="true"></span><span class="fa fa-angle-right" aria-hidden="true"></span>Tutoriels</a>
+                            </li>
+
+                            <li class="nav-item active">
+                                <a href="#" class="nav-link"><span class="far fa-comments" aria-hidden="true"></span>Forum</a>
+                            </li>
+                        
+                            <li class="nav-item active">
+                                <a href="#" class="nav-link"><span class="far fa-id-card" aria-hidden="true"></span>Emploi</a>
+                            </li>
+                        </ul>
+
+                        <form class="form-inline">
+                            <button id="inscription" class="btn btn-light">S'incrire</button>
+                            <button id="connexion" class="btn btn-success">Connexion</button>
+                        </form>
                     </div>
-
-                    <nav class="col-7">
-                        <a href="#"><span class="fa fa-home" aria-hidden="true"></span>Actualités</a>
-                        <a href="#"><span class="fa fa-angle-left" aria-hidden="true"></span><span class="fa fa-angle-right" aria-hidden="true"></span>Tutoriels</a>
-                        <a href="#"><span class="far fa-comments" aria-hidden="true"></span>Forum</a>
-                        <a href="#"><span class="far fa-id-card" aria-hidden="true"></span>Emploi</a>
-                    </nav>
-
-                    <div id="connexion-button-group" class="col-3">
-                        <button id="inscription" class="btn btn-light">S'incrire</button>
-                        <button id="connexion" class="btn btn-success">Connexion</button>
-                    </div>
-                </div>
-            </div>
-        </header>
+                </nav>
+            </header>
 
         <div id="main">
 
