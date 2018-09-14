@@ -18,7 +18,7 @@ header
 #topbar
 {
     height : 73px;
-    align-items : center; 
+    align-items : center;
 }
 
 #logo
@@ -38,7 +38,7 @@ header nav a
     text-decoration: none;
     color : black;
     padding-right : 20px;
-    
+
 }
 
 header nav a:hover
@@ -49,7 +49,7 @@ header nav a:hover
 
 #incription, #connexion
 {
-    border-radius : 8px; 
+    border-radius : 8px;
     background-color : #ABC738;
     border : 1px solid #ABC738;
 }
@@ -57,7 +57,7 @@ header nav a:hover
 #inscription
 {
     color : #ABC738;
-    border : 1px solid green; 
+    border : 1px solid green;
 }
 
 .ap-mosaic-container {
@@ -71,6 +71,11 @@ header nav a:hover
 .ap-footer-carte-mosaique {
     display: flex;
     justify-content: space-between;
+}
+
+.ap-card-body {
+  padding: 1rem;
+  padding-bottom: 0.3rem;
 }
 
 .ap-just-flex {
