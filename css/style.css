@@ -68,7 +68,9 @@ header nav a:hover
     padding-right: 10%;
 }
 
-
+.card-columns .ap-margin-offset-at-column-start {
+  margin-bottom: 0.44em;
+}
 
 .ap-footer-carte-mosaique {
     display: flex;
@@ -94,12 +96,28 @@ header nav a:hover
         -moz-column-count: 2;
         column-count: 2;
     }
+
+    .ap-extra-card {
+      position: absolute;
+      display: none;
+      z-index: 100;
+      visibility: hidden;
+      height: 0;
+    }
 }
 
-@media (min-width: 972px) {
+@media (min-width: 940px) {
     .card-columns {
         -webkit-column-count: 3;
         -moz-column-count: 3;
         column-count: 3;
+    }
+
+    .ap-extra-card {
+      position: relative;
+      display: inherit;
+      z-index: inherit;
+      visibility: inherit;
+      height: inherit;
     }
 }
