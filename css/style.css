@@ -224,3 +224,151 @@ aside h4{
   list-style-image:url("https://png.icons8.com/metro/1600/checkmark.png");
 }*/---
 
+/********* Header *************/
+
+header nav
+{
+    font-size : 1.2em;
+    /*height : 73px;
+    padding-top : 25px;*/
+}
+
+header .nav-link
+{
+    text-decoration: none;
+    color : black;
+    padding-right : 20px;
+}
+
+header .nav-link:hover
+{
+    text-decoration: underline;
+    color : #00B5E0 !important;
+}
+
+#incription, #connexion
+{
+    border-radius : 8px; 
+    background-color : #ABC738;
+    border : 1px solid #ABC738;
+}
+
+@media (max-width: 767px)
+{
+    header nav form
+    {
+        justify-content: center;
+    }
+}
+
+#inscription
+{
+    color : #ABC738;
+    border : 1px solid green; 
+}
+
+/******* Barre de recherche *******/
+
+#search-box
+{
+    margin-top : 20px;
+    justify-content : center;
+}
+
+.input-box
+{
+    background-color : white;
+}
+
+#search-bar
+{
+    outline : none;
+    border : none; 
+}
+
+#search-bar:focus
+{
+    box-shadow: 2px 2px lightblue;
+}
+
+.search-icon
+{
+    font-size : 20px;
+    align-self : center; 
+}
+
+#search-ok
+{
+    margin-left : 10px;
+    background-color : white;
+    border : none;
+    color : black;
+}
+
+#search-ok:hover
+{
+    background-color : #ABC738;
+    color : white;
+}
+
+/********* Pagination ********/
+
+#main .page-link
+{
+    border-radius : 100%; 
+    margin-right : 10px;
+    font-size : 1.3rem;
+    color : black;
+}
+
+#main .page-link:hover
+{
+    background-color : #ABC738;
+    color : white;
+}
+
+/******** Citation *******/
+
+#citation
+{
+    font-size : 1.3rem;
+}
+
+#citation .fa
+{
+    font-size : 0.5rem;
+}
+
+#citation-auteur
+{
+    font-size : 0.8rem;
+    color : #ABC738;
+}
+
+/******** Bas de page du main ******/
+
+#contacts, #contacts a
+{
+    color : #008CBA;
+    font-size : 1.4rem;
+}
+
+/******** Footer *********/
+
+footer
+{
+    background-color : white;
+    padding-top : 0.5%;
+    padding-bottom : 0.2%; 
+}
+
+footer a
+{
+    color : black;
+    text-decoration : underline; 
+}
+
+footer a:hover
+{
+    color : black;
+}
