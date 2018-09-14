@@ -68,6 +68,18 @@
                         - Une description partielle de l'article
                         - Le profil (réduit) de son auteur et commentaires
                 -->
+
+            <!-- Barre de recherche -->
+            <div id="search-box" class="row">
+                <div class="input-box">
+                    <span class="search-icon fa fa-search" aria-hidden="true"></span>
+                    <input id="search-bar" type="text" placeholder="Tutoriel, propriété css..." />
+                </div>
+                
+                <input id="search-ok" type="submit" value="Ok" /> 
+            </div>
+            
+
             <div class="card-columns ap-mosaic-container">
 
 
@@ -269,6 +281,24 @@
 
                 <!-- Navigation pages suivantes -->
 
+                <!-- Pagination -->
+                <nav>
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item"></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link" href="#">6</a></li>
+                        <li class="page-item"><a class="page-link" href="#"><span class="fa fa-chevron-right" aria-hidden="true"></span></a></li>
+                        <li class="page-item"><a class="page-link" href="#">...</a></li>
+                        <li class="page-item"></li>
+                    </ul>
+                </nav>
+
                 <!-- Aperçu du forum -->
 
             
@@ -417,13 +447,60 @@
                     </div>                
                 </section>  
             </aside>
-        </div>
+
+                <!-- Citation -->
+            <blockquote id="citation" class="blockquote text-center">
+                <cite>
+                    <sup><span class="fa fa-quote-left" aria-hidden="true"></span></sup>
+                        Citation
+                    <sup><span class="fa fa-quote-right" aria-hidden="true"></span></sup>
+                </cite>
+
+                <span id="citation-auteur">Auteur</span>
+            </blockquote>
+
+            <!-- Liens externes -->
+            <div id="contacts" class="row">
+                <div id="contacts-logo" class="col-lg-4 col-12 row">
+                    <div class="col">
+                        <span class="fab fa-github" aria-hidden="true"></span>
+                    </div>
+        
+                    <div class="col">
+                        <span class="fab fa-google-plus" aria-hidden="true"></span>
+                    </div>
+        
+                    <div class="col">
+                        <span class="fab fa-facebook-f" aria-hidden="true"></span>
+                    </div>
+        
+                    <div class="col">
+                        <span class="fab fa-twitter" aria-hidden="true"></span>
+                    </div>
+        
+                    <div class="col">
+                        <span class="fa fa-rss" aria-hidden="true"></span>
+                    </div>
+                </div>
+        
+                <a href="#" class="col">Plan du site</a>
+                <a href="#" class="col">Contact</a>
+                <a href="#" class="col">Boutique</a>
+                <a href="#" class="col">Formations</a>
+                <a href="#" class="col">agence web</a>
+            </div>
+        </div> <!-- fermeture de la div "main" -->
         
         <footer>
-            <!-- Citation -->
-            <!-- Liens externes -->
-            <!-- Bouton haut de page -->
             <!-- Mentions légales -->
+            <p>
+                Salsacréations est une communauté dédiée à la conception de sites et applications web de qualité, grâce aux standards W3C, aux feuilles de styles CSS, aux langages HTML et JavaScript, et à l'accessibilité. 
+                Réalisé par l'agence web 
+                <a href="#">Salsacreations.fr</a> 
+                · Hébergement <a href="#">maison et amical</a> 
+                · <a href="#">À propos et mentions légales</a>
+                . <a href="#">Données personnelles</a>
+            </p>
         </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
