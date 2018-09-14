@@ -68,6 +68,8 @@ header nav a:hover
     padding-right: 10%;
 }
 
+
+
 .ap-footer-carte-mosaique {
     display: flex;
     justify-content: space-between;
@@ -84,4 +86,20 @@ header nav a:hover
 
 .ap-just-flex > p {
     margin-left: 5%;
+}
+
+@media (min-width: 580px) {
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (min-width: 972px) {
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
 }
