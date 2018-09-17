@@ -11,8 +11,9 @@
 
     <body>
         <header>
+			<div id="head" class="container">
                 <!-- Logo + liens de navigations + compte -->
-                <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <nav class="navbar navbar-expand-md navbar-light">
                     <a href="#" class="navbar-brand">
                         <img src="https://cdn.alsacreations.net/css/img/logo-alsacreations.svg" width="157" heigth="36" alt="Logo AlsaCréations" id="logo" />
                     </a>
@@ -46,7 +47,8 @@
                         </form>
                     </div>
                 </nav>
-            </header>
+			</div>
+		</header>
 
         <div id="main" class="container">
 
@@ -456,7 +458,7 @@
                     <sup><span class="fa fa-quote-right" aria-hidden="true"></span></sup>
                 </cite>
 
-                <span id="citation-auteur">Auteur</span>
+                <span id="citation-auteur">(Auteur)</span>
             </blockquote>
 
             <!-- Liens externes -->
@@ -492,15 +494,17 @@
         </div> <!-- fermeture de la div "main" -->
         
         <footer>
-            <!-- Mentions légales -->
-            <p>
-                Salsacréations est une communauté dédiée à la conception de sites et applications web de qualité, grâce aux standards W3C, aux feuilles de styles CSS, aux langages HTML et JavaScript, et à l'accessibilité. 
-                Réalisé par l'agence web 
-                <a href="#">Salsacreations.fr</a> 
-                · Hébergement <a href="#">maison et amical</a> 
-                · <a href="#">À propos et mentions légales</a>
-                . <a href="#">Données personnelles</a>
-            </p>
+			<!-- Mentions légales -->
+			<div class="container">
+				<p>
+					Salsacréations est une communauté dédiée à la conception de sites et applications web de qualité, grâce aux standards W3C, aux feuilles de styles CSS, aux langages HTML et JavaScript, et à l'accessibilité. 
+					Réalisé par l'agence web 
+					<a href="#">Salsacreations.fr</a> 
+					· Hébergement <a href="#">maison et amical</a> 
+					· <a href="#">À propos et mentions légales</a>
+					. <a href="#">Données personnelles</a>
+				</p>
+			</div>
         </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
