@@ -16,6 +16,7 @@ body
 header
 {
     background-color : white;
+    border-top : 3px #ABC738 solid;
 }
 
 #logo

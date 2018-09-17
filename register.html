@@ -64,8 +64,10 @@
 
 
 
-            <div id="devenez-alsanaute">
+            <div id="devenez-alsanaute" class="mt-4">
                 <h1>Devenez Alsanaute</h1>
+            
+                <img class="float-right" src= "https://www.alsacreations.com/xmedia/pictos/alsacreatures/funny.png" alt="mascotte" id="mascotte" />
                 
                 <ul class="fa-ul">
                     <li><i class="fa-li fa fa-check"></i>Gratuit sans publicité</li>
@@ -79,14 +81,44 @@
                 </p>
             </div>
 
+            <div id="formulaire-inscription" class="mt-5">
+                <form>
 
+                    <div id="formulaire-inscription-main" class="p-4">
+                        <label for="pseudo-form" class="w-100">Choisissez un pseudo :</label>
+                        <input id="pseudo-form" type="text" class="w-100" />
 
+                        <label for="email-form" class="w-100">Votre e-mail :</label>
+                        <input id="email-form" type="email" class="w-100" />
 
+                        <p class="w-100 mt-3">
+                            <b>Indiquez une adresse e-mail valide pour recevoir votre mot de passe</b> :
+                            elle restera strictement confidentielle et ne sera jamais divulguée, 
+                            ni communiquée à un tiers, ni utilisée pour du spam. 
+                        </p>                    
 
+                        <div class="custom-control custom-checkbox mb-4">
+                            <input type="checkbox" class="custom-control-input" id="newsletter-form">
+                            <label class="custom-control-label" for="newsletter-form">Je souhaite recevoir la newsletter d'Alsacréations (Un e-mail pour les annonces importantes - maximum 4 fois par an - et ne rien manquer, annulation possible à tout moment.)</label>
+                        </div>
 
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="conditions-utilisation-form" />
+                            <label class="custom-control-label" for="conditions-utilisation-form">J'accepte les <a href="#">conditions d'utilisation</a> (4 pages seulement, on y garantit que votre âme ne sera pas vendue à Mark Zuckerberg)</label>
+                        </div>
+                    </div>
 
-
-
+                    <div class="my-3">
+                        <!-- Test Anti Robot -->
+                        <label class="w-100" for="anti-robot-form">Test anti-robot : Quelle est la couleur du cheval blanc d'Henri 4.0 ?</label>
+                        <input class="w-100" id="anti-robot-form" type="text" /> 
+                    </div>
+                    <!-- Confirmer -->
+                    <div class="row">
+                        <input class="btn btn-success mx-auto" id="confirm-form" type="submit" value="Confirmer" />
+                    </div>
+                </form>
+            </div>
 
 
 

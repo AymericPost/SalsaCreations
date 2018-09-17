@@ -1,0 +1,27 @@
+#mascotte
+{
+    height : 180px;
+}
+
+#formulaire-inscription input[type="checkbox"]
+{
+    border : 5px red solid;
+    background-color : #FFF; 
+}
+
+#formulaire-inscription-main
+{
+    background-color : #DDD;
+}
+
+#confirm-form
+{
+    background-color : #ABC738;
+    border : none;
+    font-size : 1.5rem;
+}
+
+#confirm-form:hover
+{
+    background-color : green;
+}
