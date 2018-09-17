@@ -18,6 +18,12 @@ header
     background-color : white;
 }
 
+#logo
+{
+    height : 36px;
+    width : 157px;
+}
+
 header nav
 {
     font-size : 1.2em;
@@ -191,11 +197,9 @@ aside h4{
     font-size: 1.5rem;
     font-weight: 700; 
     padding: 2% 0;
-    line-height:1.2 em;
+    /*line-height:1.2 em;*/
     color: #454545;
-    font-family: Montserrat,Helvetica,Arial,sans-Serif;
-
-    
+    font-family: Montserrat,Helvetica,Arial,sans-Serif;    
 }
 
 
@@ -247,8 +251,11 @@ aside h4{
 .twitter{
     background-color: #fff;
      padding:1.2rem; 
+}
 
-
+#logo-twitter
+{
+    width : 150px;
 }
 
 
