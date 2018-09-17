@@ -122,18 +122,11 @@ header nav a:hover
       height: inherit;
     }
 }
-=======
-    border : 1px solid green; 
-}
+
+/*---------/*ASIDE*//*--------*/
 
 
-
-
-
----------/*ASIDE*/--------
-
-
-----------/*titres aside*/-------------
+/*----------/*titres aside*//*-------------*/
 
 aside h4{
     
@@ -148,7 +141,7 @@ aside h4{
 }
 
 
----------/*titres sujets forum*/----------
+/*---------/*titres sujets forum*//*----------*/
 
 
 .forum-topic {
@@ -167,17 +160,17 @@ aside h4{
 
 
 
-------/* tags (differentes couleurs)---non actifs pour l'instant à cause de bootstrap
+/*------/* tags (differentes couleurs)---non actifs pour l'instant à cause de bootstrap
 
 .badge-primary {
     background-color: #6fa939;
 }
-*/------
+*/
 
 
 
         
-----------/* A RAJOUTER DANS HEADER : font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;  ---------------*/ 
+/*----------/* A RAJOUTER DANS HEADER : font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;  ---------------*/ 
         
 
 
@@ -222,7 +215,18 @@ aside h4{
 
   /*ol{
   list-style-image:url("https://png.icons8.com/metro/1600/checkmark.png");
-}*/---
+}*/
+
+
+
+
+
+
+
+
+
+
+
 
 /********* Header *************/
 
