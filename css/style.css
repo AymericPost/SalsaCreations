@@ -40,7 +40,7 @@ header .nav-link:hover
 
 #incription, #connexion
 {
-    border-radius : 8px; 
+    border-radius : 8px;
     background-color : #ABC738;
     border : 1px solid #ABC738;
 }
@@ -56,7 +56,7 @@ header .nav-link:hover
 #inscription
 {
     color : #ABC738;
-    border : 1px solid green; 
+    border : 1px solid green;
 }
 
 /******* Barre de recherche *******/
@@ -75,7 +75,7 @@ header .nav-link:hover
 #search-bar
 {
     outline : none;
-    border : none; 
+    border : none;
 }
 
 #search-bar:focus
@@ -86,7 +86,7 @@ header .nav-link:hover
 .search-icon
 {
     font-size : 20px;
-    align-self : center; 
+    align-self : center;
 }
 
 #search-ok
@@ -102,6 +102,8 @@ header .nav-link:hover
     background-color : #ABC738;
     color : white;
 }
+
+  /*----- Mosaïque -----*/
 
 .ap-mosaic-container {
     margin: 0%;
@@ -140,12 +142,8 @@ header .nav-link:hover
         column-count: 2;
     }
 
-    .ap-extra-card {
-      position: absolute;
+    .card-columns .ap-extra-card {
       display: none;
-      z-index: 100;
-      visibility: hidden;
-      height: 0;
     }
 }
 
@@ -156,12 +154,8 @@ header .nav-link:hover
         column-count: 3;
     }
 
-    .ap-extra-card {
-      position: relative;
+    .card-columns .ap-extra-card {
       display: inherit;
-      z-index: inherit;
-      visibility: inherit;
-      height: inherit;
     }
 }
 
@@ -169,7 +163,7 @@ header .nav-link:hover
 
 #main .page-link
 {
-    border-radius : 100%; 
+    border-radius : 100%;
     margin-right : 10px;
     font-size : 1.3rem;
     color : black;
@@ -187,15 +181,15 @@ header .nav-link:hover
 /*----------/*titres aside*//*-------------*/
 
 aside h4{
-    
+
     font-size: 1.5rem;
-    font-weight: 700; 
+    font-weight: 700;
     padding: 2% 0;
-    line-height:1.2 em;
+    /*-- line-height:1.2 em; ERREUR--*/
     color: #454545;
     font-family: Montserrat,Helvetica,Arial,sans-Serif;
 
-    
+
 }
 
 
@@ -207,13 +201,13 @@ aside h4{
     color:#008cba;
     text-decoration:none;
     margin-top: 0;
-        
+
 }
 
 
 .forum-topic:hover{
     text-decoration: underline;
-    
+
 }
 
 
@@ -227,26 +221,26 @@ aside h4{
 
 
 
-        
-/*----------/* A RAJOUTER DANS HEADER : font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;  ---------------*/ 
+
+/*----------/* A RAJOUTER DANS HEADER : font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;  ---------------*/
 
 
 .container-alsanautes-twitter{
     margin-top:5%;
-    
+
 }
 
 
 .alsanautes{
     background-color: #fff;
-    padding:1.2rem; 
+    padding:1.2rem;
 
 
 }
 
 .twitter{
     background-color: #fff;
-     padding:1.2rem; 
+     padding:1.2rem;
 
 
 }
@@ -254,16 +248,16 @@ aside h4{
 
 .badge-container{
     width:10em;
-   
+
 }
 
 /*
 @media only screen and (max-width:480px)
 {}
 
-    
 
-@media only screen and (min-width:481px) and (max-width:989px)  
+
+@media only screen and (min-width:481px) and (max-width:989px)
 {}
 */
   /*ol{
@@ -303,13 +297,13 @@ footer
 {
     background-color : white;
     padding-top : 0.5%;
-    padding-bottom : 0.2%; 
+    padding-bottom : 0.2%;
 }
 
 footer a
 {
     color : black;
-    text-decoration : underline; 
+    text-decoration : underline;
 }
 
 footer a:hover
