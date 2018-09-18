@@ -4,3 +4,12 @@
     border : 1px solid red;
     border-radius : 5px;
 }
+
+.date
+{
+    position : absolute;
+    right : 2.5%;
+    top : 0px;
+    font-style : italic;
+    color : grey;
+}
