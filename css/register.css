@@ -3,15 +3,6 @@
     height : 180px;
 }
 
-/* Pour les checkbox ---> ne marche pas :( */
-/*
-#formulaire-inscription input[type="checkbox"]
-{
-    border : 5px red solid;
-    background-color : #FFF; 
-}
-*/
-
 #formulaire-inscription-main
 {
     background-color : #DDD;
