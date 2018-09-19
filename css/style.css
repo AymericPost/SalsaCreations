@@ -1,3 +1,7 @@
+        
+----------/* A RAJOUTER DANS HEADER : font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;  ---------------*/ 
+
+
 /* Mettre du style */
 html
 {
@@ -101,17 +105,7 @@ aside h4{
 
 
 
-------/* tags (differentes couleurs)---non actifs pour l'instant à cause de bootstrap
 
-.badge-primary {
-    background-color: #6fa939;
-}
-*/------
-
-
-
-        
-----------/* A RAJOUTER DANS HEADER : font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;  ---------------*/ 
         
 
 
@@ -143,20 +137,158 @@ aside h4{
 }
 
 
-@media only screen and (max-width:480px)
-{}
 
+
+
+/*------------------- PAGE ARTICLE ------------------- */
+
+
+
+#container-global{
     
-
-@media only screen and (min-width:481px) and (max-width:989px)
-    
-{}
-
-
-
-ol{
-    /*list-style-image:url("https://png.icons8.com/metro/1600/checkmark.png");
+    max-width: 800px;
+    margin-top: 2em;    
 }
+
+
+
+#container-page-article{
+    
+    
+    background-color: #fff;
+    padding:0.8em;
+}
+
+
+
+
+/*--------bloc gris- resultats sondage----*/
+
+#block-gris-resultats{
+    margin-top:0;
+    background-color:#424242;
+    border-radius:0.3em;
+    color:#fff;
+    padding: 1.3em;
+    text-align: center;
+    
+}
+
+
+#block-gris-resultats a{
+    
+    text-decoration:underline;
+    color:#9E9E9E;
+}
+
+
+#block-gris-resultats h6{
+    
+    font-family: Montserrat,Helvetica,Arial,sans-Serif;
+    font-size:1.3em;
+    font-weight:bold;
+   
+}
+
+#block-gris-resultats .actualite{
+    font-size:0.5em;
+    text-transform: uppercase;
+    font-weight:bold;
+    line-height:-0.9;
+   
+}
+
+
+
+.tag-alsa {
+    
+    background-color: #fff;
+    color:#37474F;
+    font-size:0.5em;
+    font-weight:bold;
+    border-radius:2px;
+    padding:0.4em;
+    margin-left:2em;
+        
+}
+
+
+.actualite-tag-alsa{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.auteur{
+    
+    font-size:0.7em;
+    color:lightgray;
+}
+
+
+.liens{
+    font-size:0.7em;
+    color:lightgray;
+    
+}
+
+
+
+
+
+
+/*-----images et texte----*/
+
+
+
+.texte-article p{
+    
+    font-size:0.7em;
+    border-radius:0.3em;
+    text-align:left;
+    margin-top:0;
+    padding-top: 1.3em;
+    padding-bottom: 1.3em;
+    
+}
+
+
+
+.texte-article img {
+    
+    text-align: center;
+    
+}
+    
+.texte-article .source span{
+    color:#008cba;
+    text-decoration: underline;
+}
+
+
+.texte-article p span{
+    
+    font-weight:bold;
+}
+
+img{
+    text-align: center;
+}
+
+ .img-fluid {
+    
+    max-width: 100%;
+    height:auto;
+    text-align: center;
+   
+}
+
+
+
+
+
 
 
 
