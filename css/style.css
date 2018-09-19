@@ -113,6 +113,11 @@ header .nav-link:hover
     padding-right: 10%;
 }
 
+.card .ap-tuto-logo {
+  text-align: center;
+  margin-top: 4%;
+}
+
 .card-title {
   color: #578fba;
   font-weight: bold;
@@ -133,12 +138,14 @@ header .nav-link:hover
   color: #6f8bff;
 }
 
+
 .ap-cards-tags h6 {
   font-weight: bold;
+  text-align: center;
 }
 
 .card-columns .ap-margin-offset-at-column-start {
-  margin-bottom: 0.44em;
+  margin-bottom: 0.45em;
 }
 
 .ap-cards-tags {
@@ -164,6 +171,7 @@ header .nav-link:hover
 .ap-just-flex > p {
     margin-left: 5%;
 }
+
 
 @media (min-width: 1px) {
     .card-columns {
