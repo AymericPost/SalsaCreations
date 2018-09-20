@@ -112,6 +112,13 @@ header .nav-link:hover
     padding-left: 10%;
     padding-right: 10%;
 }
+.card{
+    position: relative;
+}
+.ap-card-body {
+  padding: 1rem;
+  padding-bottom: 0.3rem;
+}
 
 .card .ap-tuto-logo {
   text-align: center;
@@ -159,9 +166,15 @@ header .nav-link:hover
     color: #6f8bff;
 }
 
-.ap-card-body {
-  padding: 1rem;
-  padding-bottom: 0.3rem;
+.ap-lower-card-body {
+  position: absolute;
+  bottom: 0;
+}
+
+.card-body i {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
 }
 
 .ap-just-flex {
