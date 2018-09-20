@@ -13,8 +13,8 @@
         <header>
 			<div id="head" class="container">
                 <!-- Logo + liens de navigations + compte -->
-                <nav class="navbar navbar-expand-md navbar-light">
-                    <a href="#" class="navbar-brand">
+                <nav class="navbar navbar-expand-md navbar-light col-12 row">
+                    <a href="index.html" class="navbar-brand">
                         <img src="https://cdn.alsacreations.net/css/img/logo-alsacreations.svg" alt="Logo AlsaCréations" id="logo" />
                     </a>
 
@@ -22,36 +22,76 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                    <div id="navbarSupportedContent" class="collapse navbar-collapse ml-3">
                         <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a href="#" class="nav-link"><span class="fa fa-home" aria-hidden="true"></span>Actualités</a>
+                            <li class="nav-item active mr-2">
+                                <div class="dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"><span class="fa fa-home" aria-hidden="true"></span> Actualités</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Toutes les actualités</a>
+                                        <a class="dropdown-item" href="#">Proposer une actualité</a>
+                                        <a class="dropdown-item" href="#">Suivez-nous sur Twitter</a>
+                                        <a class="dropdown-item" href="#">Flux RSS</a>
+                                    </div>
+                                </div>
                             </li>
 
-                            <li class="nav-item active">
-                                <a href="#" class="nav-link"><span class="fa fa-angle-left" aria-hidden="true"></span><span class="fa fa-angle-right" aria-hidden="true"></span>Tutoriels</a>
+                            <li class="nav-item mr-2">
+                                <div class="dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"><span class="fa fa-angle-left" aria-hidden="true"></span><span class="fa fa-angle-right" aria-hidden="true"></span> Tutoriels</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Separated link</a>
+                                    </div>
+                                </div>
                             </li>
 
-                            <li class="nav-item active">
-                                <a href="#" class="nav-link"><span class="far fa-comments" aria-hidden="true"></span>Forum</a>
+                            <li class="nav-item mr-2">
+                                <div class="dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"><span class="far fa-comments" aria-hidden="true"></span> Forum</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Nouveau sujet/question</a>
+                                        <a class="dropdown-item" href="#">Catégories</a>
+                                        <a class="dropdown-item" href="#">Dernières réponses</a>
+                                        <a class="dropdown-item" href="#">Recherche</a>
+                                    </div>
+                                </div>
                             </li>
-                        
-                            <li class="nav-item active">
-                                <a href="#" class="nav-link"><span class="far fa-id-card" aria-hidden="true"></span>Emploi</a>
+
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"><span class="far fa-id-card" aria-hidden="true"></span> Emploi</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <ul class="list-unstyled col-6">
+                                                <li><a class="dropdown-item" href="#">Offres d'emploi</a></li>
+                                                <li><a class="dropdown-item" href="#">Demandes d'emploi</a></li>
+                                                <li><a class="dropdown-item" href="#">Favoris</a></li>
+                                            </ul>
+                                            
+                                            <ul class="list-unstyled col-6">
+                                                <li><a class="dropdown-item" href="#">Poster une offre</a></li>
+                                                <li><a class="dropdown-item" href="#">Poster une demande</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>                            
                             </li>
                         </ul>
 
                         <form class="form-inline">
-                            <button id="inscription" class="btn btn-light">S'incrire</button>
+                            <input id="inscription" type="button" class="btn btn-light mr-2" onclick="window.location.href='register.html'" value="S'incrire" />
                             <button id="connexion" class="btn btn-success">Connexion</button>
                         </form>
                     </div>
                 </nav>
-			</div>
+            </div>
 		</header>
 
         <div id="main" class="container">
-
 
                 <!-- Contenu dynamique variables en fonction de la page -->
                 <!--
@@ -77,209 +117,219 @@
                     <span class="search-icon fa fa-search" aria-hidden="true"></span>
                     <input id="search-bar" type="text" placeholder="Tutoriel, propriété css..." />
                 </div>
-                
-                <input id="search-ok" type="submit" value="Ok" /> 
+
+                <input id="search-ok" type="submit" value="Ok" />
             </div>
-            
-
-            <div class="card-columns ap-mosaic-container">
 
 
-                <div class="card ap-margin-offset-at-column-start" style="width: 16rem;">
-                    <a href="#">
-                        <div class="card-body ap-card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non libero porttitor, condimentum urna et, dapibus lectus.</p>
+        <div class="card-columns ap-mosaic-container">
 
-                        </div>
-                    </a>
+          <div class="card ap-margin-offset-at-column-start ap-tuto-html-style" style="width: 18rem; height: 12.9rem;">
+              <a href="#">
+                <p class="ap-tuto-logo"><img  src="resources/HTML5_Logo_512.png" alt="Logo HTML5"/></p>
+                <div class="card-body ap-card-body">
+                  <h5 class="card-title ap-tuto-logo">Besoin d'une formation HTML 5?</h5>
                 </div>
+              </a>
+          </div>
 
-                <div class="card ap-margin-offset-at-column-start" style="width: 16rem;">
-                    <a href="#">
-                        <div class="card-body ap-card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non libero porttitor, condimentum urna et, dapibus lectus.</p>
-
-                        </div>
-                    </a>
+          <div class="card ap-margin-offset-at-column-start" style="width: 18rem; height: 12.9rem;">
+              <a href="#">
+                <p class="ap-tuto-logo"><img  src="resources/CSS3_logo_and_wordmark.png" alt="Logo CSS3"/></p>
+                <div class="card-body ap-card-body">
+                  <h5 class="card-title ap-tuto-logo">Besoin d'une formation CSS 3?</h5>
                 </div>
+              </a>
+          </div>
 
-                <div class="card" style="width: 16rem;">
+          <div class="card" style="width: 18rem; height: 26rem;">
 
-                    <a href="#">
-                        <img class="card-img-top" src="https://via.placeholder.com/450x221" alt="Card image cap">
+            <a href="https://esolangs.org/wiki/Spoon" target="_blank">
+              <img class="card-img-top" src="resources/coding-mac-1853305_640.jpg" alt="Card image cap">
 
-                        <div class="card-body ap-card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non libero porttitor, condimentum urna et, dapibus lectus.</p>
-
-                            <div class="ap-footer-carte-mosaique">
-                                <div class="ap-just-flex">
-                                    <div><img src="https://via.placeholder.com/25x25" alt="Publisher avatar" class="rounded-circle"></div>
-                                    <p>user_name </p>
-                                </div>
-
-                                <i class="far fa-comment"></i>
-                            </div>
-                        </div>
-                    </a>
+              <div class="card-body ap-card-body">
+                <h5 class="card-title">Top 5 IDE sur Mac !</h5>
+                <div class="ap-cards-tags">
+                  <h6 class="card-text">Outil <span class="badge badge-secondary">Développement</span></h6>
                 </div>
+                <p class="card-text">Trouvez l'environnement de travail qui vous convient sous MAC OS.</p>
 
-                <div class="card" style="width: 16rem;">
-
-                    <a href="#">
-                        <img class="card-img-top" src="https://via.placeholder.com/450x221" alt="Card image cap">
-
-                        <div class="card-body ap-card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non libero porttitor, condimentum urna et, dapibus lectus.</p>
-
-                            <div class="ap-footer-carte-mosaique">
-                                <div class="ap-just-flex">
-                                    <div><img src="https://via.placeholder.com/25x25" alt="Publisher avatar" class="rounded-circle"></div>
-                                    <p>user_name </p>
-                                </div>
-
-                                <i class="far fa-comment"></i>
-                            </div>
-                        </div>
-                    </a>
+                <div class="ap-footer-carte-mosaique ap-lower-card-body">
+                  <div class="ap-just-flex">
+                    <div><img src="https://via.placeholder.com/25x25" alt="Publisher avatar" class="rounded-circle"></div>
+                    <p>JeremyBowers</p>
+                  </div>
                 </div>
+                <i class="far fa-comment"></i>
+              </div>
+            </a>
+          </div>
 
+          <div class="card" style="width: 18rem; height: 26rem;">
 
-                <div class="card  ap-extra-card" style="width: 16rem;">
+            <a href="#">
+              <img class="card-img-top" src="resources/computer-1209641_640.jpg" alt="Card image cap">
 
-                    <a href="#">
-                        <img class="card-img-top" src="https://via.placeholder.com/450x221" alt="Card image cap">
-
-                        <div class="card-body ap-card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non libero porttitor, condimentum urna et, dapibus lectus.</p>
-
-                            <div class="ap-footer-carte-mosaique">
-                                <div class="ap-just-flex">
-                                    <div><img src="https://via.placeholder.com/25x25" alt="Publisher avatar" class="rounded-circle"></div>
-                                    <p>user_name </p>
-                                </div>
-
-                                <i class="far fa-comment"></i>
-                            </div>
-                        </div>
-                    </a>
+              <div class="card-body ap-card-body">
+                <h5 class="card-title">Nos frameworks CSS préférés</h5>
+                <div class="ap-cards-tags">
+                  <h6 class="card-text">Outil <span class="badge badge-primary">CSS</span></h6>
                 </div>
+                <p class="card-text">Des outils pour se faciliter la vie. Code less, do more !</p>
 
-
-                <div class="card" style="width: 16rem;">
-
-                    <a href="#">
-                        <img class="card-img-top" src="https://via.placeholder.com/450x221" alt="Card image cap">
-
-                        <div class="card-body ap-card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non libero porttitor, condimentum urna et, dapibus lectus.</p>
-
-                            <div class="ap-footer-carte-mosaique">
-                                <div class="ap-just-flex">
-                                    <div><img src="https://via.placeholder.com/25x25" alt="Publisher avatar" class="rounded-circle"></div>
-                                    <p>user_name </p>
-                                </div>
-
-                                <i class="far fa-comment"></i>
-                            </div>
-                        </div>
-                    </a>
+                <div class="ap-footer-carte-mosaique ap-lower-card-body">
+                  <div class="ap-just-flex">
+                      <div><img src="https://via.placeholder.com/25x25" alt="Publisher avatar" class="rounded-circle"></div>
+                      <p>JeanNaymar</p>
+                  </div>
                 </div>
+                <i class="far fa-comment"></i>
+              </div>
+            </a>
+          </div>
 
-                <div class="card" style="width: 16rem;">
 
-                    <a href="#">
-                        <img class="card-img-top" src="https://via.placeholder.com/450x221" alt="Card image cap">
+          <div class="card" style="width: 18rem; height: 26rem;">
 
-                        <div class="card-body ap-card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non libero porttitor, condimentum urna et, dapibus lectus.</p>
+              <a href="article.html">
+                <img class="card-img-top" src="resources/artificial-intelligence-3382507_640.jpg" alt="Card image cap">
+                <div class="card-body ap-card-body">
+                  <h5 class="card-title">Les formations en ligne</h5>
+                  <div class="ap-cards-tags">
+                    <h6 class="card-text">Actualités <span class="badge badge-dark">SalsaCréation</span></h6>
+                  </div>
+                  <p class="card-text">Les résultats du sondage.</p>
 
-                            <div class="ap-footer-carte-mosaique">
-                                <div class="ap-just-flex">
-                                    <div><img src="https://via.placeholder.com/25x25" alt="Publisher avatar" class="rounded-circle"></div>
-                                    <p>user_name </p>
-                                </div>
-
-                                <i class="far fa-comment"></i>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="card" style="width: 16rem;">
-
-                    <a href="#">
-                        <img class="card-img-top" src="https://via.placeholder.com/450x221" alt="Card image cap">
-
-                        <div class="card-body ap-card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non libero porttitor, condimentum urna et, dapibus lectus.</p>
-
-                            <div class="ap-footer-carte-mosaique">
-                                <div class="ap-just-flex">
-                                    <div><img src="https://via.placeholder.com/25x25" alt="Publisher avatar" class="rounded-circle"></div>
-                                    <p>user_name </p>
-                                </div>
-
-                                <i class="far fa-comment"></i>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="card" style="width: 16rem;">
-
-                    <a href="#">
-                        <img class="card-img-top" src="https://via.placeholder.com/450x221" alt="Card image cap">
-
-                        <div class="card-body ap-card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non libero porttitor, condimentum urna et, dapibus lectus.</p>
-
-                            <div class="ap-footer-carte-mosaique">
-                                <div class="ap-just-flex">
-                                    <div><img src="https://via.placeholder.com/25x25" alt="Publisher avatar" class="rounded-circle"></div>
-                                    <p>user_name </p>
-                                </div>
-
-                                <i class="far fa-comment"></i>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-              <div class="card" style="width: 16rem;">
-
-                  <a href="#">
-                      <img class="card-img-top" src="https://via.placeholder.com/450x221" alt="Card image cap">
-
-                      <div class="card-body ap-card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non libero porttitor, condimentum urna et, dapibus lectus.</p>
-
-                          <div class="ap-footer-carte-mosaique">
-                              <div class="ap-just-flex">
-                                  <div><img src="https://via.placeholder.com/25x25" alt="Publisher avatar" class="rounded-circle"></div>
-                                  <p>user_name </p>
-                              </div>
-
-                              <i class="far fa-comment"></i>
-                          </div>
+                  <div class="ap-footer-carte-mosaique ap-lower-card-body">
+                      <div class="ap-just-flex">
+                          <div><img src="https://via.placeholder.com/25x25" alt="Publisher avatar" class="rounded-circle"></div>
+                          <p>AAC </p>
                       </div>
-                  </a>
-
+                  </div>
+                  <i class="far fa-comment"></i>
                 </div>
+            </a>
+          </div>
 
 
+
+          <div class="card ap-extra-card" style="width: 18rem; height: 26rem;">
+
+            <a href="https://esolangs.org/wiki/Spoon" target="_blank" rel="noopener noreferrer">
+              <img class="card-img-top"  src="resources/binary-code-475664_640.jpg" alt="Card image cap">
+
+              <div class="card-body ap-card-body">
+                <h5 class="card-title">Débuter en Spoon</h5>
+                <div class="ap-cards-tags">
+                  <h6 class="card-text">Tutoriel <span class="badge badge-danger">Esotérique</span></h6>
+                </div>
+                <p class="card-text">Merveilleux produit dérivé du B***fuck, les 0 et les 1 n'auront plus de secrets pour vous !</p>
+                <div class="ap-footer-carte-mosaique ap-lower-card-body">
+                  <div class="ap-just-flex">
+                      <div><img src="https://via.placeholder.com/25x25" alt="Publisher avatar" class="rounded-circle"></div>
+                      <p>rogerLaMouche</p>
+                  </div>
+                </div>
+                <i class="far fa-comment"></i>
               </div>
 
+            </a>
+          </div>
 
+          <div class="card" style="width: 18rem; height: 26rem;">
+
+            <a href="#">
+              <img class="card-img-top" src="resources/imac-1999636_640.png" alt="Card image cap">
+
+              <div class="card-body ap-card-body">
+              <h5 class="card-title">Les bonnes pratiques du responsive design</h5>
+                <div class="ap-cards-tags">
+                  <h6 class="card-text">Tutoriel <span class="badge badge-warning">Design</span></h6>
+                </div>
+                <p class="card-text">S'adapter en toute fluidité à toutes largeurs d'écrans, du téléphonne à l'écran de cinéma.</p>
+
+                <div class="ap-footer-carte-mosaique ap-lower-card-body">
+                  <div class="ap-just-flex">
+                      <div><img src="https://via.placeholder.com/25x25" alt="Publisher avatar" class="rounded-circle"></div>
+                      <p>JoeGermuska</p>
+                  </div>
+                </div>
+                <i class="far fa-comment"></i>
+              </div>
+            </a>
+          </div>
+
+          <div class="card" style="width: 18rem; height: 26rem;">
+
+            <a href="#">
+                <img class="card-img-top" src="resources/stone-3630911_640.jpg" alt="Card image cap">
+
+                <div class="card-body ap-card-body">
+                <h5 class="card-title">Où trouver de bonnes textures de fond ?</h5>
+                <div class="ap-cards-tags">
+                  <h6 class="card-text">Actualités <span class="badge badge-warning">Design</span></h6>
+                </div>
+                <p class="card-text">N'utilisez pas ce mur, prenez vos background-image depuis ces sources.</p>
+
+                <div class="ap-footer-carte-mosaique ap-lower-card-body">
+                    <div class="ap-just-flex">
+                        <div><img src="https://via.placeholder.com/25x25" alt="Publisher avatar" class="rounded-circle"></div>
+                        <p>Annabel</p>
+                    </div>
+                </div>
+                <i class="far fa-comment"></i>
+              </div>
+            </a>
+          </div>
+
+          <div class="card" style="width: 18rem; height: 26rem;">
+
+              <a href="#">
+                <img class="card-img-top" src="resources/programmer-1653351_640.png" alt="Card image cap">
+
+                <div class="card-body ap-card-body">
+                <h5 class="card-title">!important; Mes pires erreurs</h5>
+                  <div class="ap-cards-tags">
+                    <h6 class="card-text">Astuces <span class="badge badge-primary">CSS</span></h6>
+                  </div>
+                  <p class="card-text">Les petites lignes qui font perdre beaucoup de temps.</p>
+
+                  <div class="ap-footer-carte-mosaique ap-lower-card-body">
+                    <div class="ap-just-flex">
+                        <div><img src="https://via.placeholder.com/25x25" alt="Publisher avatar" class="rounded-circle"></div>
+                        <p>Ping</p>
+                    </div>
+                  </div>
+                  <i class="far fa-comment"></i>
+              </div>
+            </a>
+          </div>
+
+          <div class="card" style="width: 18rem; height: 26rem;">
+
+            <a href="#">
+              <img class="card-img-top" src="resources/cyber-glasses-1938449_640.jpg" alt="Card image cap">
+
+              <div class="card-body ap-card-body">
+              <h5 class="card-title">Animations en JS</h5>
+                <div class="ap-cards-tags">
+                  <h6 class="card-text">Tutoriel <span class="badge badge-success">Javascript</span></h6>
+                </div>
+                <p class="card-text">La théorie, la pratique, les frameworks & libraries.</p>
+
+                <div class="ap-footer-carte-mosaique ap-lower-card-body">
+                  <div class="ap-just-flex">
+                      <div><img src="https://via.placeholder.com/25x25" alt="Publisher avatar" class="rounded-circle"></div>
+                      <p>Pong</p>
+                  </div>
+                </div>
+                <i class="far fa-comment"></i>
+              </div>
+            </a>
+          </div>
+
+
+        </div>
 
                 <!-- Navigation pages suivantes -->
 
@@ -287,9 +337,7 @@
                 <nav>
                     <ul class="pagination justify-content-center">
                         <li class="page-item"></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">1</a>
-                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
                         <li class="page-item"><a class="page-link" href="#">2</a></li>
                         <li class="page-item"><a class="page-link" href="#">3</a></li>
                         <li class="page-item"><a class="page-link" href="#">4</a></li>
@@ -303,55 +351,55 @@
 
                 <!-- Aperçu du forum -->
 
-            
+
             <!-- Contenu dynamique variables en fonction de la page -->
             <!--
-                Responsive : 
+                Responsive :
                     990px de large = grand écrans -> 3 articles
                     de 545px à 989px de large = écrans moyens -> 2 articles
                     de 544 à moins = écrans petits -> 1 article
             -->
-            
+
             <!-- Barre de recherche visible sur la plupart des pages-->
-            
-            <!-- 
+
+            <!--
                 Articles de tailles égales quelque soit la disposition
                     - Une image en-tête
                     - Un titre
                     - Une description partielle de l'article
                     - Le profil (réduit) de son auteur et commentaires
             -->
-            
+
             <!-- Navigation pages suivantes -->
-            
-        
-            
+
+
+
             <!-- Aside (forum, twitter) -->
-            
-            
-            
+
+
+
             <aside>
                 <section>
                     <div class="container container-forum">
 
                         <h2>En direct du forum </h2>
-                        
+
             <!-- *******************bootstrap****************** -->
-                        
+
                         <ul class="list-group container ">
                             <li class="list-group-item row ">
                                 <div>
-                                    <span class="forum-topic col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4"> Margin left et right </span> 
+                                    <span class="forum-topic col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4"> Margin left et right </span>
                                 </div>
 
                                 <div class="badge-container col-xs-2 col-sm-1 col-md-1 col-lg-1 col-xl-1">
                                     <span class="badge badge-primary ">css</span>
-                                </div>   
+                                </div>
 
                                 <div>
                                     <span class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4"> par bijbij il y a 18 h</span>
                                 </div>
-                                
+
                             </li>
 
                             <li class="list-group-item row">
@@ -365,13 +413,13 @@
                             </li>
 
 
-                            <li class="list-group-item row"> 
+                            <li class="list-group-item row">
                                 <div>
                                     <span class="forum-topic col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4"> Combien faut-il de personnes pour développer un site ?</span>
                                 </div>
                                 <div class="badge-container col-xs-2 col-sm-1 col-md-1 col-lg-1 col-xl-1">
                                     <span class="badge badge-secondary">développement</span>
-                                </div>       
+                                </div>
                                 <span class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4"> par askhanir il y a 20 h</span>
                             </li>
 
@@ -379,11 +427,11 @@
                             <li class="list-group-item row">
                                 <div>
                                     <span class="forum-topic">API des réseaux sociaux</span>
-                                </div>   
+                                </div>
                                 <div class="badge-container col-xs-2 col-sm-1 col-md-1 col-lg-1 col-xl-1">
                                     <span class="badge badge-secondary">développement</span>
                                 </div>
-                                <span class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">par xavier75005 il y a 24 h</span> 
+                                <span class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">par xavier75005 il y a 24 h</span>
                             </li>
 
                             <li class="list-group-item row">
@@ -397,31 +445,30 @@
                             </li>
                         </ul>
                     </div>
-                </section>          
-                
+                </section>
+
                 <section>
                     <div class="container container-alsanautes-twitter">
-                        <div class="row "> 
+                        <div class="row ">
 
                             <div class=" col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                
+
                                 <h2>Devenez Alsanaute</h2>
 
                                 <div class="alsanautes">
-                                    
+
                                     <img class="mascotte-container" src= "https://www.alsacreations.com/xmedia/pictos/alsacreatures/funny.png" alt="mascotte" height="130"/>
-                                    
                                     <ul class="fa-ul">
                                         <li><i class="fa-li fa fa-check"></i>Gratuit sans publicité</li>
                                         <li><i class="fa-li fa fa-check"></i>Plein de ressources de qualité</li>
                                         <li><i class="fa-li fa fa-check"></i>Accès complet à une communauté active</li>
                                     </ul>
 
-                                    <button type="button" class="btn btn-success btn-lg">Inscrivez-vous</button>
+                                    <input type="button" class="btn btn-success btn-lg" onclick="window.location.href='register.html'" value="Inscrivez-vous" />
                                 </div>
                             </div>
-                
-                                
+
+
                             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                 <h2>Twitter</h2>
 
@@ -431,7 +478,7 @@
                                     </div>
 
                                     <div class="twitter-icone-container">
-                                            <img src="https://help.twitter.com/content/dam/help-twitter/brand/logo.png" alt="twitter-icone" id="logo-twitter"/>  
+                                            <img src="https://help.twitter.com/content/dam/help-twitter/brand/logo.png" alt="twitter-icone" id="logo-twitter"/>
                                     </div>
 
                                     <p>Rendez-vous à Paris Web 2018!</p>
@@ -442,23 +489,24 @@
                                         <a href="https://t.co/TJaE8RbHEg">---some link</a>
                                         <i>icone</i>
                                         <i>icone</i>
-                                    </div>       
+                                    </div>
                                 </div>
-                            </div>   
-                        </div>    
-                    </div>                
-                </section>  
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </aside>
 
-                <!-- Citation -->
+
+            <!-- Citation -->
             <blockquote id="citation" class="blockquote text-center">
                 <cite>
                     <sup><span class="fa fa-quote-left" aria-hidden="true"></span></sup>
-                        Citation
+                        Il y a 10 types de personnes : ceux qui comprennent les booléens et ceux qui ne les comprennent pas
                     <sup><span class="fa fa-quote-right" aria-hidden="true"></span></sup>
                 </cite>
 
-                <span id="citation-auteur">(Auteur)</span>
+                <span id="citation-auteur">(Aymeric Post)</span>
             </blockquote>
 
             <!-- Liens externes -->
@@ -467,24 +515,24 @@
                     <div class="col">
                         <span class="fab fa-github" aria-hidden="true"></span>
                     </div>
-        
+
                     <div class="col">
                         <span class="fab fa-google-plus" aria-hidden="true"></span>
                     </div>
-        
+
                     <div class="col">
                         <span class="fab fa-facebook-f" aria-hidden="true"></span>
                     </div>
-        
+
                     <div class="col">
                         <span class="fab fa-twitter" aria-hidden="true"></span>
                     </div>
-        
+
                     <div class="col">
                         <span class="fa fa-rss" aria-hidden="true"></span>
                     </div>
                 </div>
-        
+
                 <a href="#" class="col">Plan du site</a>
                 <a href="#" class="col">Contact</a>
                 <a href="#" class="col">Boutique</a>
@@ -492,15 +540,15 @@
                 <a href="#" class="col">agence web</a>
             </div>
         </div> <!-- fermeture de la div "main" -->
-        
+
         <footer>
 			<!-- Mentions légales -->
 			<div class="container">
 				<p>
-					Salsacréations est une communauté dédiée à la conception de sites et applications web de qualité, grâce aux standards W3C, aux feuilles de styles CSS, aux langages HTML et JavaScript, et à l'accessibilité. 
-					Réalisé par l'agence web 
-					<a href="#">Salsacreations.fr</a> 
-					· Hébergement <a href="#">maison et amical</a> 
+					Salsacréations est une communauté dédiée à la conception de sites et applications web de qualité, grâce aux standards W3C, aux feuilles de styles CSS, aux langages HTML et JavaScript, et à l'accessibilité.
+					Réalisé par l'agence web
+					<a href="#">Salsacreations.fr</a>
+					· Hébergement <a href="#">maison et amical</a>
 					· <a href="#">À propos et mentions légales</a>
 					. <a href="#">Données personnelles</a>
 				</p>
@@ -511,5 +559,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-    </body>
+  </body>
 </html>
