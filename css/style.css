@@ -220,9 +220,8 @@ header .nav-link:hover
 
 #main .page-link
 {
-    border-radius : 100%; 
-    margin-right : 10px;
-    font-size : 1.3rem;
+    border-radius : 100%;
+    font-size : 1.2rem;
     color : black;
 }
 
@@ -230,6 +229,15 @@ header .nav-link:hover
 {
     background-color : #ABC738;
     color : white;
+}
+
+@media screen and (min-width:576px)
+{
+    #main .page-link
+    {
+        margin-left : 1vw;
+        margin-right : 1vw;
+    }
 }
 
 /*---------/*ASIDE*//*--------*/
