@@ -47,7 +47,7 @@ header .nav-link:hover
 
 #incription, #connexion
 {
-    border-radius : 8px; 
+    border-radius : 8px;
     background-color : #ABC738;
     border : 1px solid #ABC738;
 }
@@ -63,7 +63,7 @@ header .nav-link:hover
 #inscription
 {
     color : #ABC738;
-    border : 1px solid green; 
+    border : 1px solid green;
 }
 
 /******* Barre de recherche *******/
@@ -82,7 +82,7 @@ header .nav-link:hover
 #search-bar
 {
     outline : none;
-    border : none; 
+    border : none;
 }
 
 #search-bar:focus
@@ -93,7 +93,7 @@ header .nav-link:hover
 .search-icon
 {
     font-size : 20px;
-    align-self : center; 
+    align-self : center;
 }
 
 #search-ok
@@ -112,12 +112,50 @@ header .nav-link:hover
 
   /*----- Mosaïque -----*/
 
-  .ap-mosaic-container {
+.ap-mosaic-container {
     margin: 0%;
     padding: 0%;
     padding-top: 5%;
     padding-left: 10%;
     padding-right: 10%;
+}
+.card{
+    position: relative;
+}
+.ap-card-body {
+  padding: 1rem;
+  padding-bottom: 0.3rem;
+}
+
+.card .ap-tuto-logo {
+  text-align: center;
+  margin-top: 4%;
+}
+
+.card-title {
+  color: #578fba;
+  font-weight: bold;
+}
+
+.card-text {
+  color: #626262;
+  text-align: justify;
+  margin: 2%;
+}
+
+.card:hover .card-title{
+  color: #f25e23;
+}
+
+ .card a:hover {
+  text-decoration: none;
+  color: #6f8bff;
+}
+
+
+.ap-cards-tags h6 {
+  font-weight: bold;
+  text-align: center;
 }
 
 .card .ap-tuto-logo {
@@ -166,9 +204,15 @@ header .nav-link:hover
     color: #6f8bff;
 }
 
-.ap-card-body {
-  padding: 1rem;
-  padding-bottom: 0.3rem;
+.ap-lower-card-body {
+  position: absolute;
+  bottom: 0;
+}
+
+.card-body i {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
 }
 
 .ap-just-flex {
@@ -220,7 +264,7 @@ header .nav-link:hover
 
 #main .page-link
 {
-    border-radius : 100%; 
+    border-radius : 100%;
     margin-right : 10px;
     font-size : 1.3rem;
     color : black;
@@ -238,13 +282,13 @@ header .nav-link:hover
 /*----------/*titres aside*//*-------------*/
 
 aside h4{
-    
+
     font-size: 1.5rem;
-    font-weight: 700; 
+    font-weight: 700;
     padding: 2% 0;
     /*line-height:1.2 em;*/
     color: #454545;
-    font-family: Montserrat,Helvetica,Arial,sans-Serif;    
+    font-family: Montserrat,Helvetica,Arial,sans-Serif;
 }
 
 
@@ -256,13 +300,13 @@ aside h4{
     color:#008cba;
     text-decoration:none;
     margin-top: 0;
-        
+
 }
 
 
 .forum-topic:hover{
     text-decoration: underline;
-    
+
 }
 
 
@@ -276,26 +320,26 @@ aside h4{
 
 
 
-        
-/*----------/* A RAJOUTER DANS HEADER : font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;  ---------------*/ 
+
+/*----------/* A RAJOUTER DANS HEADER : font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;  ---------------*/
 
 
 .container-alsanautes-twitter{
     margin-top:5%;
-    
+
 }
 
 
 .alsanautes{
     background-color: #fff;
-    padding:1.2rem; 
+    padding:1.2rem;
 
 
 }
 
 .twitter{
     background-color: #fff;
-     padding:1.2rem; 
+     padding:1.2rem;
 }
 
 #logo-twitter
@@ -306,7 +350,7 @@ aside h4{
 
 .badge-container{
     width:10em;
-   
+
 }
 
 /*------------------- PAGE ARTICLE ------------------- */
@@ -334,7 +378,7 @@ aside h4{
     color:#fff;
     margin: 1.5em;
     margin-bottom : 0.5em;
-    padding : 1em;  
+    padding : 1em;
     text-align : center;
 }
 
@@ -395,7 +439,7 @@ aside h4{
 .texte-article img {
     text-align: center;
 }
-    
+
 .texte-article .source span{
     color:#008cba;
     text-decoration: underline;
@@ -409,7 +453,7 @@ img{
     text-align: center;
 }
 
-.img-fluid {    
+.img-fluid {
     /*max-width: 100%;
     height:auto;*/
     text-align: center;
@@ -496,13 +540,13 @@ footer
 {
     background-color : white;
     padding-top : 0.5%;
-    padding-bottom : 0.2%; 
+    padding-bottom : 0.2%;
 }
 
 footer a
 {
     color : black;
-    text-decoration : underline; 
+    text-decoration : underline;
 }
 
 footer a:hover
