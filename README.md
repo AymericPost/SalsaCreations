@@ -13,7 +13,7 @@ Aucune installation requise.
 
 Vous pouvez voir le rendu du site sur [Github Pages : SalsaCreations](https://clementgodard.github.io/SalsaCreations/).
 
-## Framework utilisés
+## Framework utilisé
 
 Ce site a été élaboré avec [Bootstrap](https://getbootstrap.com/).
 
