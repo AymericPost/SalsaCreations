@@ -1,6 +1,6 @@
 # SalsaCreations
 
-Ceci est le rendu du premier projet donné par la Wild Code School lors du premier mois de la formation. Le but était d'acquérir plus d'experience pratique avec l'intégration web et de se familiariser avec Bootstrap. Pour cela, notre groupe de 3 élèves ont eu 3 semaines pour faire un clone de 3 pages d'un site.
+Ceci est le rendu du premier projet donné par la Wild Code School lors du premier mois de la formation. Le but était d'acquérir plus d'experience pratique avec l'intégration web et de se familiariser avec Bootstrap. Pour cela, notre groupe de 3 élèves a eu 3 semaines pour faire un clone de 3 pages d'un site.
 
 Nous avons choisi alsacreations.com :
 - [Page d'accueil](https://www.alsacreations.com/)
